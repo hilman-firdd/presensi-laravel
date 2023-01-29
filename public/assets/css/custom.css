@@ -1,0 +1,56 @@
+html,body {background-color: #eee !important}
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #fff;
+}
+.preloader .loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font: 14px arial;
+}
+.mapid {
+    position: relative;
+    z-index: 0;
+    height: 87vh;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .mapid {
+        height: 87vh;
+        width: 100%;
+    }
+}
+.rounded-4 { border-radius: .5rem; }
+.rounded-5 { border-radius: .75rem; }
+.rounded-6 { border-radius: 1rem; }
+
+/* not active */
+.nav-pills .pill-1 .nav-link:not(.active) {
+    background-color: rgba(31, 59, 179, 0.6);
+    font-weight: normal;
+}
+
+.nav-pills .pill-2 .nav-link:not(.active) {
+    background-color: rgba(232, 21, 0, 0.6);
+    font-weight: normal;
+}
+
+/* active (faded) */
+.nav-pills .pill-1 .nav-link {
+    background-color: rgba(31, 59, 179, 1);
+    font-weight: bold;
+    color: white;
+}
+
+.nav-pills .pill-2 .nav-link {
+    background-color: rgba(232, 21, 0, 1);
+    font-weight: bold;
+    color: white;
+}
